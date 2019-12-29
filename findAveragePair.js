@@ -5,7 +5,7 @@ function averagePair(arr, num) {
     let j = arr.length - 1;
     if (1 >= arr.length) { return false; }
 
-    while (i < arr.length && j >= 0) {
+    while (i < j) {
         if ((arr[i] + arr[j]) / 2 === num) {
             return true;
         } else if ((arr[i] + arr[j]) / 2 < num) {
