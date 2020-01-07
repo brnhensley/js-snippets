@@ -7,7 +7,7 @@ function maxSubarraySum(arr, number) {
     let maxSum = 0;
     let i = 0;
     let j = 1;
-    if (number > arr.length) { return null; }
+    if (number > arr.length) return null;
 
     while (i + number <= arr.length) {
         let tempSum = arr[i] + arr[j];
@@ -31,3 +31,5 @@ console.log(maxSubarraySum([1, 4, 2, 10, 23, 3, 1, 0, 20], 4)) // 39
 console.log(maxSubarraySum([-3, 4, 0, -2, 6, -1], 2)) // 5
 console.log(maxSubarraySum([3, -2, 7, -4, 1, -1, 4, -2, 1], 2)) // 5
 console.log(maxSubarraySum([2, 3], 3))  // null
+
+// example solution
